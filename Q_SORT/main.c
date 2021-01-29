@@ -4,7 +4,7 @@
 #include "my_getch.h"
 #include "array_1D_create.h"
 #include "random_filled_array.h"
-#include "bubble_sort.h"
+#include "q_sort.h"
 #include "array_1D_print.h"
 #include "array_1D_free.h"
 #include "yes_or_no.h"
@@ -27,11 +27,11 @@ int main(int argc, char** argv)
 		array_1D_print(arr, N);
 		printf("\n");
 	}
-	bubble_sort(arr, N);
+	q_sort(arr, 0, N-1);
 	printf("Do you want to print sorted array?(y/n)\n");
 	if(yes_or_no())
 	{
-		printf("\nSorted random genereted array:\n");
+		printf("\nSorted (qsort) random genereted array:\n");
 		array_1D_print(arr, N);
 	}
 	array_1D_free(arr);

@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 	read_number(&n); 
 	array_fill(str, n);
 	printf("\n");
-	array_sort_alphabetic(str, n, M);
+	array_sort_alphabetic(str, n);
 	printf("Sorted array:\n");
 	array_print(str, n);
 	array_free(str);
